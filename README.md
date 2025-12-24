@@ -1,16 +1,38 @@
-# React + Vite
+# HERO.IO – App Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📱 App Name
+**HERO.IO – App Marketplace**
 
-Currently, two official plugins are available:
+## 📝 Description
+HERO.IO is a modern app marketplace web application where users can explore, search, and view details of popular applications.  
+Users can install apps, view ratings and reviews visually, and manage their installed apps using local storage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The platform provides:
+- A clean and responsive UI
+- App listing with search functionality
+- Detailed app information pages
+- Installation and uninstall features
+- Ratings visualization using charts
 
-## React Compiler
+This project demonstrates real-world React concepts such as routing, custom hooks, state management, and data persistence.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
+- Browse all applications
+- Search apps by name
+- View app details (downloads, ratings, reviews, size, description)
+- Install apps (stored in localStorage)
+- Uninstall apps from installed list
+- Sort installed apps by downloads
+- Responsive design with skeleton loading
+- Error handling and custom error page
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+- **React.js** – Frontend library
+- **React Router** – Client-side routing
+- **Axios** – Data fetching
+- **Recharts** – Ratings visualization (Bar Chart)
+- **Tailwind CSS** – Styling
+- **DaisyUI** – UI components
+- **React Toastify** – Notifications
+- **LocalStorage** – Data persistence
+- **Vite** – Development & build tool
