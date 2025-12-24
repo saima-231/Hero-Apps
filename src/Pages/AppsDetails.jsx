@@ -76,12 +76,16 @@ const AppsDetails = () => {
                     </div>
 
                     <div>
-                        <button onClick={handleClick}
-                        disabled = {disabled}
-                        className="btn btn-success text-white my-2">
-                        { disabled ? "Installed" : 
-                        `Install Now (${size} MB)`}   
-                           </button>
+                       <button
+  onClick={handleClick}
+  disabled={disabled}
+  className={`btn my-2 text-white ${
+    disabled ? "bg-gray-300" : "btn-success"
+  }`}
+>
+  {disabled ? "Installed" : `Install Now (${size} MB)`}
+</button>
+
 
                     </div>
 

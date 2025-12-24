@@ -17,7 +17,7 @@ const Home = () => {
                     <a href="https://play.google.com/store/games?hl=en"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <button className="btn text-black font-semibold">
+                        <button className="btn text-black bg-white border-none font-semibold">
                             <img src="/Group.png" alt="" />
                             Google Play
                         </button>
@@ -25,7 +25,7 @@ const Home = () => {
                     <a href="https://www.apple.com/app-store/"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <button className="btn text-black font-semibold">
+                        <button className="btn text-black bg-white border-none font-semibold">
                             <img src="/Group1.png" alt="" />
                             App Store
                         </button>
@@ -64,7 +64,7 @@ const Home = () => {
             </div>
             {
                 loading?<SkeletonLoader></SkeletonLoader>:
-                 <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                 <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 m-4'>
                 {
                     featuredApps.map((app) => (<AppsCard key={app.id} app={app}></AppsCard>))
                 }

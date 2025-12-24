@@ -6,7 +6,7 @@ const Installation = () => {
     const [sortOrder, setSortOrder] = useState('none');
 
     if (!appList.length)
-         return <p className='text-center mt-10 text-xl'>No Data is Available.</p>;
+         return <p className='text-center mt-10 text-xl text-black'>No Data is Available.</p>;
 
     const sortedItem = (() => {
         if (sortOrder === 'downloads-asc') 
@@ -22,19 +22,19 @@ const Installation = () => {
     };
 
     return (
-        <div>
+        <div className='m-2'>
             <div>
                 <h2 className='text-[#001931] font-bold text-[48px] text-center my-3'>Your Installed Apps</h2>
                 <p className='text-[#627382] text-[20px] text-center'>Explore All Trending Apps on the Market developed by us</p>
             </div>
 
             <div className='flex justify-between items-center py-4'>
-                <h1 className='font-semibold text-3xl'>
+                <h1 className='font-semibold text-3xl text-black'>
                     App List <span className='text-sm text-gray-600'>({sortedItem.length}) Apps Found</span>
                 </h1>
                 <label className='form-control w-full max-w-xs'>
                     <select 
-                        className='select select-bordered' 
+                        className='select select-bordered border-gray-400 bg-white text-black' 
                         value={sortOrder} 
                         onChange={e => setSortOrder(e.target.value)}
                     >

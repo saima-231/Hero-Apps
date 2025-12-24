@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar bg-white shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className=" btn-ghost text-black lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                     </div>
                     <ul
@@ -27,17 +27,17 @@ const Navbar = () => {
 
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 ">
-                    <li><NavLink to={'/'}>Home</NavLink></li>
-                    <li><NavLink to={'/apps'}>Apps</NavLink></li>
-                    <li><NavLink to={'/installation'}>Installation</NavLink></li>
+                <ul className="menu menu-horizontal px-1 text-blck">
+                    <li className='text-black'><NavLink to={'/'}>Home</NavLink></li>
+                    <li className='text-black'><NavLink to={'/apps'}>Apps</NavLink></li>
+                    <li className='text-black'><NavLink to={'/installation'}>Installation</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
                 <div className=''>
-                    <a href='https://github.com/Wasima230Sultana'
+                    <a href='https://github.com/saima-231'
                         target="_blank"
-                        rel="noopener noreferrer" className="text-white btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-lg"><Github /> Contribute</a>
+                        rel="noopener noreferrer" className="text-white border-none btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-lg"><Github /> Contribute</a>
                 </div>
             </div>
         </div>

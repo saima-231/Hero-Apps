@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 const ErrorPage = () => {
     const error= useRouteError();
     return (
- <div className='flex flex-col min-h-screen'>
+ <div className='flex flex-col min-h-screen bg-white'>
             <Navbar></Navbar>
             <div className='flex-1'>
                 <div>

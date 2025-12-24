@@ -12,12 +12,12 @@ const Apps = () => {
     const term = search.trim().toLocaleLowerCase();
     const searchedApps= term?(apps.filter((app)=> app.title.toLocaleLowerCase().includes(term))): apps
     return (
-         <div>
+         <div className='m-5'>
             <h2 className='text-[#001931] font-bold text-[48px] text-center mt-4 mb-2'>Our All Applications</h2>
             <p className='text-[#627382] text-[20px] text-center mb-4'>Explore All Apps on the Market developed by us. We code for Millions</p>
-            <div className='flex justify-between items-center py-4'>
-                <h1 className='text-sm text-[#001931] font-semibold'>({searchedApps.length})Apps Found</h1>
-                <label className='input'>
+            <div className='flex justify-between items-center py-4 '>
+                <h1 className=' text-sm text-[#001931] font-semibold'>({searchedApps.length})Apps Found</h1>
+                <label className='input bg-white border-gray-400 text-gray-600'>
                     <input 
                     value={search}
                     onChange={e=>setSearch(e.target.value)}
